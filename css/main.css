@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Encode Sans Expanded', sans-serif;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+
+/*____________________Header______________________*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    position: sticky;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.logo{
+    width: 210px;
+    margin-left: 1rem;
+}
+
+.search input{
+    width: 200px;
+    padding: 10px;
+}
+
+.menu{
+    list-style-type: none;
+    display: flex;
+}
+.menu a{
+    margin: 1rem;
+    color: white;
+    font-size: small;
+}
+
+/*____________________Main______________________*/
+
+.hero{
+    background-color: rgb(51, 51, 51);
+    background-image: url("../img/frente.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0px;
+
+    width: 100%;
+    height: 63vh;
+    padding-top: 320px;
+    padding-left: 120px;
+
+    color: white;
+}
+
+
+.grilla{
+    height: 100vh;
+    gap: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.tutorial1{
+background-color: turquoise;
+}
+.tutorial2{
+    background-color: yellow;
+
+}
+.tutorial3{
+    background-color: gray;
+
+}
+.tutorial4{
+    background-color: magenta;
+
+}
+
+
+.tutoriales h3{
+    margin: 40px;
+    padding-top: 60px;
+}
+.tutoriales img{
+    width: 300px;
+
+    display: inline-block;
+    margin: 20px;
+}
+
+.articulo{
+    margin-top: 30px;
+    background-color: rgb(248, 248, 248);
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+}
+.articulo h3{
+    margin: 40px;
+    padding-top: 60px;
+}
+.articulo p{
+    display: flex;
+    margin: 40px;
+    padding: 20px;
+    align-items: center;
+}
+.articulo img{
+    width: 450px;
+
+}
+.marcas{
+    margin: 50px;
+}
+.marcas img{
+    width: 120px;
+    margin: 60px;
+}
+/*____________________Footer______________________*/
+
+footer{
+    border-top: solid 1px;
+    margin-top: 25px;
+    padding: 20px;
+    display: flex;
+    background-color: rgb(248, 248, 248);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ubicacion{
+    display: block;
+}
+
+.ubicacion h3{
+    font-size: small;
+    margin-bottom: 10px;
+}
+.ubicacion img{
+    position: absolute;
+    padding-top: 10px;
+}
+.ubicacion p{
+    margin-left: 35px;
+    padding: 10px;
+}
+
+.redes img{
+    width: 40px;
+    height: 40px;
+}
