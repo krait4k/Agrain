@@ -24,6 +24,7 @@ header{
     align-items: center;
     top: 0;
     position: sticky;
+    z-index: 1;
     background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -47,58 +48,68 @@ header{
     font-size: small;
 }
 
-/*____________________Main______________________*/
-
-.hero{
-    background-color: rgb(51, 51, 51);
-    background-image: url("../img/frente.jpg");
-    background-repeat: no-repeat;
-    background-position: 50% 0px;
-
-    width: 100%;
-    height: 63vh;
-    padding-top: 320px;
-    padding-left: 120px;
-
-    color: white;
+.menu a:hover{
+    background-color: white;
+    padding: 5px;
+    color: black;
+    font-size: small;
+    border: 2px solid ;
 }
 
+/*____________________Main______________________*/
 
-.grilla{
-    height: 100vh;
-    gap: 20px;
+.tutoriales{
+    height: 70vh;
+    border-top: solid 1px;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 170px 1fr;
+
+    grid-template-areas:
+    "tutorialesTitle tutorialesTitle tutorialesTitle tutorialesTitle"
+    "tutorial1 tutorial2 tutorial3 tutorial4";
+
+    justify-items: center;
+    align-items: center;
+}
+
+.gBox{
+    margin: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.tutorialesTitle{
+    grid-area: tutorialesTitle;
 }
 
 .tutorial1{
-background-color: turquoise;
+    background-color: turquoise;
+    grid-area: tutorial1;
 }
 .tutorial2{
     background-color: yellow;
-
+    grid-area: tutorial2;
 }
 .tutorial3{
     background-color: gray;
-
+    grid-area: tutorial3;
 }
 .tutorial4{
     background-color: magenta;
-
+    grid-area: tutorial4;
 }
 
-
-.tutoriales h3{
+.tutoriales h1{
+    font-size: 26px;
     margin: 40px;
-    padding-top: 60px;
+    /* padding-top: 60px; */
 }
 .tutoriales img{
     width: 300px;
-
-    display: inline-block;
-    margin: 20px;
 }
 
 .articulo{
@@ -106,10 +117,32 @@ background-color: turquoise;
     background-color: rgb(248, 248, 248);
     border-top: solid 1px;
     border-bottom: solid 1px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 170px 1fr;
+
+    grid-template-areas:
+    "artTitle artTitle"
+    "artParrafo artImg";
+
+    justify-items: center;
+    align-items: center;
 }
-.articulo h3{
+
+.artTitle{
+    grid-area: artTitle;
+}
+.artParrafo{
+    grid-area: artParrafo;
+}
+.artImg{
+    grid-area: artImg;
+}
+
+.articulo h1{
     margin: 40px;
-    padding-top: 60px;
+    font-size: 26px;
 }
 .articulo p{
     display: flex;
@@ -119,20 +152,150 @@ background-color: turquoise;
 }
 .articulo img{
     width: 450px;
-
+    padding: 2rem;
 }
 .marcas{
     margin: 50px;
+    justify-items: center;
 }
 .marcas img{
     width: 120px;
     margin: 60px;
 }
+/* (((((((((page Nosotros))))))))) */
+.nosotros{
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+
+    background-image: url(../img/fondopro.png);
+    background-position: 50%;
+    background-size: 100%;
+    gap: 2rem;
+}
+.nosotros-left, .nosotros-right{
+    flex: 1;
+}
+.nosotros-right{
+    display: flex;
+    justify-content: center;
+}
+.nosotros-right img{
+    width: 300px;
+    background-color: rgba(224, 224, 224, 0.400);
+    border: 1px solid white;
+    border-radius: 2rem;
+}
+.n-title{
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.n-text{
+    margin-bottom: 1rem;
+}
+.n-link{
+    color: rgb(0, 0, 0);
+    background-color: rgba(190, 190, 190, 0.400);
+    border: 1px solid white;
+    padding: .5rem 1rem;
+    display: inline-block;
+    border-radius: 1rem;
+}
+
+.mision-vision{
+    display: flex;
+    align-items: center;
+    padding: 5rem;
+    gap: 2rem;
+
+    background-image: linear-gradient(turquoise, gray);
+    border-top: 1px solid white;
+}
+.mision, .vision{
+    padding: 2rem;
+
+    background-color: rgba(224, 224, 224, 0.400);
+    border: 1px solid white;
+    border-radius: 2rem;
+}
+.v-title, .m-title{
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.v-text, .m-text{
+    text-align: justify;
+}
+
+.historia{
+    display: flex;
+    align-items: center;
+    padding: 5rem;
+    gap: 2rem;
+
+    background-image: linear-gradient(white, white, rgba(0, 0, 0, 0.349));
+    border-top: 1px solid black;
+}
+
+.h-title{
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.h-text{
+    text-align: justify;
+}
+
+/* (((((((((page Contacto))))))))) */
+
+.formulario{
+    padding: 2rem;
+}
+
+.f-data{
+    display: inline-block;
+    background-color: rgba(0, 128, 128, 0.500);
+    border: 1px solid black;
+}
+
+.f-title{
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.name, .last, .consult, .buttons{
+    padding: .5rem;    
+}
+
+.consult textarea{
+    margin-top: .5rem;
+}
+
+.locales{
+    padding: 2rem;
+    background-image: linear-gradient(white, white, rgba(0, 0, 0, 0.349));
+    border-top: 1px solid black;
+}
+
+.l-title{
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.maps{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
 /*____________________Footer______________________*/
 
 footer{
     border-top: solid 1px;
-    margin-top: 25px;
     padding: 20px;
     display: flex;
     background-color: rgb(248, 248, 248);
@@ -160,4 +323,66 @@ footer{
 .redes img{
     width: 40px;
     height: 40px;
+}
+
+@media (max-width: 990px){
+
+    .tutoriales{
+        height: 70%;
+        justify-items: center;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr;
+
+        grid-template-areas:
+        "tutorialesTitle tutorialesTitle"
+        "tutorial1 tutorial2"
+        "tutorial3 tutorial4";
+    }
+
+}
+
+@media (max-width: 650px){
+
+    .search input{
+        display: none;
+        width: 0px;
+    }
+
+    .tutoriales{
+        height: 70%;
+        justify-items: center;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
+
+        grid-template-areas:
+        "tutorialesTitle"
+        "tutorial1"
+        "tutorial2"
+        "tutorial3"
+        "tutorial4";
+    }
+
+    .nosotros{
+        display: block;
+    }
+    .nosotros-right img{
+        width: 150px;
+    }
+
+    .mision-vision{
+        display: block;
+    }
+    .mision, .vision{
+        margin: 1rem;
+    }
+
+    .historia{
+        display: block;
+    }
+    .local{
+        margin: 1rem;
+    }
+
 }

@@ -8,59 +8,57 @@
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-    <header>
-        <div class="header">
-            <div class="logo">
-                <a href="../index.html"><img src="../img/AgrainNegroSinFondo.png" alt="agrainLogo"></a>
-            </div>
+    <header class="header">
+        <a href="../index.html" class="logo"><img src="../img/AgrainNegroSinFondo.png" alt="logo" ></a>
 
-            <div>
-                <nav>
-                    <ul class="menu">
-                        <li><a href="../pages/pintureria.html">PINTURERIA</a></li>
-                        <li><a href="../pages/deco.html">DECO</a></li>
-                        <li><a href="../pages/nosotros.html">NOSOTROS</a></li>
-                        <li><a href="#">CONTACTO</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="../pages/pintureria.html">PINTURERIA</a></li>
+                <li><a href="../pages/deco.html">DECO</a></li>
+                <li><a href="../pages/nosotros.html">NOSOTROS</a></li>
+                <li><a href="#">CONTACTO</a></li>
+            </ul>
+        </nav>
 
-            <div class="search">
-                <input type="search" placeholder="Que estas buscando?">
-            </div>
+        <div class="search">
+            <input type="search" placeholder="Que estas buscando?">
         </div>
-    </header>
+</header>
 
     <main>
-
-        <h1>Contactanos</h1>
-
-        <form action="">
-            <div>
-                <label for="name">Nombre: </label>
-                <input type="text" placeholder="Descripcion" id="name" required><br>
-            </div>
-            
-            <div>
-                <label for="email">Email: </label>
-                <input type="email" placeholder="Correo Electronico" id="email" required><br>
-            </div>
+        <div class="formulario">
+            <h1 class="f-title">Contactanos</h1>
+            <form class="f-data" action="">
+                <div class="name">
+                    <label for="name">Nombre: </label>
+                    <input type="text" placeholder="Descripcion"    id="name" required><br>
+                </div>
+                
+                <div class="last">
+                    <label for="email">Email: </label>
+                    <input type="email" placeholder="Correo electronico" id="email" required><br>
+                </div>
     
-            <div>
-                <label for="text">Ingrese un Consulta: </label><br>
-                <textarea cols="30" rows="10" placeholder="En que lo podemos ayudar?" id="text"></textarea>
-            </div>
-            
-            <div>
-                <input type="submit">
-                <input type="reset">
-            </div>
-        </form>
-
-        <div>
-            <h1>Nuestros Locales Comerciales</h1>
+                <div class="consult">
+                    <label for="text">Ingrese un Consulta: </label><br>
+                    <textarea cols="30" rows="10" placeholder="En que   lo podemos ayudar?" id="text"></textarea>
+                </div>
+                
+                <div class="buttons">
+                    <input type="submit">
+                    <input type="reset">
+                </div>
+            </form>
         </div>
-        <div>
+        
+        <div class="locales">
+            <h1 class="l-title">Nuestros Locales Comerciales</h1>
+
+            <div class="maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.87984082196755!2d-68.84671390989348!3d-32.937419099135354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0babc9b5d039%3A0xd2c83a8e69e6ccf5!2sAgra%C3%ADn%20Pintureria%20Y%20Decoraci%C3%B3n!5e0!3m2!1ses-419!2sar!4v1703548749039!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.87910867463674!2d-68.85015471313649!3d-32.937679265716405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0be6015b6a67%3A0xb635a67890f0a50d!2sAGRAIN%20Pinturer%C3%ADa%20y%20Deco!5e0!3m2!1ses-419!2sar!4v1703548910139!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
             
         </div>
 

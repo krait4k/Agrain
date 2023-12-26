@@ -10,7 +10,7 @@
     
 </head>
 <body>
-    <header>
+    <header class="header">
         <a href="./index.html" class="logo"><img src="./img/AgrainNegroSinFondo.png" alt="logo" ></a>
 
         <nav>
@@ -28,38 +28,50 @@
     </header>
 
     <main>
-        <div class="hero">
-            <h1>Visita Nuestro Nuevo Local!</h1>
-            <h2>Conoce nuestras novedades</h2>
+        <div class="row">
+            <div class="col-12">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./img/Carrusel 1.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/Carrusel 2.png" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
         </div>
-
-
-
-        <div class="grilla">
-            <div class="tutorial1"><img src="./img/azulejosTuto.jpg" alt=""></div>
-            <div class="tutorial2"><img src="./img/melaminaTuto.jpg" alt=""></div>
-            <div class="tutorial3"><img src="./img/vintageTuto.jpg" alt=""></div>
-            <div class="tutorial4"><img src="./img/renovarTuto.jpg" alt=""></div>
-        </div>
-
-
-
         
         <article class="tutoriales">
-            <h3>Te Compartimos algunos tutoriales:</h3>
-            <img src="./img/azulejosTuto.jpg" alt="">
-            <img src="./img/melaminaTuto.jpg" alt="">
-            <img src="./img/vintageTuto.jpg" alt="">
-            <img src="./img/renovarTuto.jpg" alt="">
+            <div class="tutorialesTitle"><h1>Te Compartimos algunos tutoriales:</h1></div>
+            <div class="gBox tutorial1"><img src="./img/azulejosTuto.jpg" alt=""></div>
+            <div class="gBox tutorial2"><img src="./img/melaminaTuto.jpg" alt=""></div>
+            <div class="gBox tutorial3"><img src="./img/vintageTuto.jpg" alt=""></div>
+            <div class="gBox tutorial4"><img src="./img/renovarTuto.jpg" alt=""></div>
         </article>
 
         <article class="articulo">
-            <h3>Bienvenido a tu mundo de colores</h3>
-            <p>Descubrí cómo transformar tu hogar con las últimas tendencias de color y diseño.
-            Llegó la forma más fácil de transformar la expectativa en realidad.
-            Aquí podrás encontrar muchos consejos, tips e instructivos de como decorar y darle un toque distinto a tus ambientes
-            <img src="./img/pintureria2.jpg" alt="">
-            </p>
+            <div class="artTitle"><h1>Bienvenido a tu mundo de colores</h1></div>
+            <div class="artParrafo"><p>Descubrí cómo transformar tu hogar con las últimas tendencias de color y diseño.
+            Te ofecemos la forma más fácil de transformar la expectativa en realidad.
+            Aquí podrás encontrar muchos consejos, tips e instructivos de como decorar y darle un toque distinto a tus ambientes</p></div>
+            <div class="artImg"><img src="./img/pintureria2.jpg" alt=""></div>
+            
+            
         </article>
 
         <article class="marcas">
