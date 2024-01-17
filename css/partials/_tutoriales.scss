@@ -1,0 +1,51 @@
+.tutoriales {
+    border-top: solid 1px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 170px 1fr;
+    grid-template-areas: "tutorialesTitle tutorialesTitle tutorialesTitle tutorialesTitle" "tutorial1 tutorial2 tutorial3 tutorial4";
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .gBox {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .tutorialesTitle {
+    grid-area: tutorialesTitle;
+  }
+  
+  .tutorial1 {
+    background-color: rgb(60, 225, 200);
+    grid-area: tutorial1;
+  }
+  
+  .tutorial2 {
+    background-color: rgb(255, 255, 0);
+    grid-area: tutorial2;
+  }
+  
+  .tutorial3 {
+    background-color: rgb(128, 128, 128);
+    grid-area: tutorial3;
+  }
+  
+  .tutorial4 {
+    background-color: rgb(255, 0, 255);
+    grid-area: tutorial4;
+  }
+  
+  .tutoriales {
+    h1 {
+      font-size: 26px;
+      margin: 40px;
+    }
+  
+    img {
+      width: 300px;
+    }
+}

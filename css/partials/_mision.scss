@@ -1,0 +1,30 @@
+.mision-vision {
+    display: flex;
+    align-items: center;
+    padding: 5rem;
+    gap: 2rem;
+    background-image: linear-gradient(turquoise, gray);
+    border-top: 2px solid white;
+
+    .mision, .vision {
+        padding: 2rem;
+        background-color: rgba(224, 224, 224, 0.4);
+        border: 1px solid white;
+        border-radius: 2rem;
+
+        .v-title, .m-title {
+            font-size: 26px;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+  
+        .v-text, .m-text {
+            text-align: justify;
+        }
+
+    }
+
+}
+  
+
+  

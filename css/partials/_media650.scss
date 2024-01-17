@@ -1,0 +1,56 @@
+@media (max-width: 650px){
+
+    .search input{
+        display: none;
+        width: 0px;
+    }
+
+    .tutoriales{
+        height: 70%;
+        justify-items: center;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
+
+        grid-template-areas:
+        "tutorialesTitle"
+        "tutorial1"
+        "tutorial2"
+        "tutorial3"
+        "tutorial4";
+    }
+
+    .nosotros{
+        display: block;
+
+        .nosotros-right img{
+            width: 150px;
+        }
+
+    }
+    
+    .mision-vision{
+        display: block;
+
+        .mision, .vision{
+            margin: 1rem;
+        }
+
+    }
+    
+    .historia{
+        display: block;
+
+        .local{
+            margin: 1rem;
+        }
+    }
+
+    .categorias{
+        display: grid;
+        gap: 2rem;
+        padding: 2rem;
+
+        grid-template-columns: 1fr;
+    }
+}

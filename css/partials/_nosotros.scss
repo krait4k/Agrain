@@ -1,0 +1,47 @@
+.nosotros {
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+    background-image: url(../img/fondopro.png);
+    background-position: 50%;
+    background-size: 100%;
+    gap: 2rem;
+
+    .nosotros-left {
+        flex: 1;
+
+        .n-title {
+            font-size: 26px;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+  
+        .n-text {
+            margin-bottom: 1rem;
+        }
+  
+        .n-link {
+            color: rgb(0, 0, 0);
+            background-color: rgba(190, 190, 190, 0.4);
+            border: 1px solid white;
+            padding: .5rem 1rem;
+            display: inline-block;
+            border-radius: 1rem;
+        }
+
+    }
+  
+    .nosotros-right {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+  
+        img {
+            width: 300px;
+            background-color: rgba(224, 224, 224, 0.4);
+            border: 2px solid white;
+            border-radius: 2rem;
+        }
+    }
+
+}

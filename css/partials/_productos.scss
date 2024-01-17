@@ -1,0 +1,83 @@
+.productos{
+    background-image: linear-gradient(rgba(1, 65, 65, 0.479), white, white, rgba(1, 65, 65, 0.479));
+
+    .productos-title{
+        text-align: end;
+        background-image: url(../img/Fondo\ pinturas.jpg);
+        padding: 3rem;
+        font-size: 26px;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+
+    .categorias{
+        display: flex;
+        gap: 2rem;
+        padding: 2rem;
+
+        .cat1{
+            background-color: rgba(90, 180, 171);
+        }
+        .cat1:hover{
+            background-image: url(../img/latexFondo.png);
+            background-size: 100%;
+        }
+
+        .cat2{
+            background-color: rgb(146, 146, 146);
+        }
+        .cat2:hover{
+            background-image: url(../img/esmalteFondo.png);
+            background-size: 100%;
+        }
+
+        .cat3{
+            background-color: rgb(230, 139, 230);
+        }
+        .cat3:hover{
+            background-image: url(../img/maderasFondo.png);
+            background-size: 100%;
+        }
+
+        .cat4{
+            background-color: rgb(235, 235, 110);
+        }
+        .cat4:hover{
+            background-image: url(../img/especialFondo.png);
+            background-size: 100%;
+        }
+
+        .categoria{
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+            .linea-icon{
+                font-size: 3rem;
+                margin-bottom: 2rem;
+                text-align: center;
+            }
+
+            .linea-title{
+                font-size: 20px;
+                font-weight: 450;
+                margin-bottom: 1rem;
+            }
+            .linea-text{
+                margin-bottom: .8rem;
+            }
+
+            .linea-link{
+                color: white;
+                font-size: .8rem;
+                padding: .4rem;
+                background-color: rgba(0, 0, 0, 0.35);
+                border-radius: .5rem;
+    
+            }
+
+        }
+
+    } 
+
+}

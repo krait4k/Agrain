@@ -1,0 +1,24 @@
+.historia {
+    display: flex;
+    align-items: center;
+    padding: 5rem;
+    gap: 2rem;
+    background-image: linear-gradient(white, white, rgba(0, 0, 0, 0.349));
+
+    .local {
+        border: 1px solid white;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+
+        .h-title {
+            font-size: 26px;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+  
+        .h-text {
+            text-align: justify;
+        }
+    }
+
+}
+  

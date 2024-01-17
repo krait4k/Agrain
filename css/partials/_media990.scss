@@ -1,0 +1,42 @@
+@media (max-width: 990px){
+
+    .sidebar{
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+    }
+
+    .tutoriales{
+        height: 70%;
+        justify-items: center;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr;
+
+        grid-template-areas:
+        "tutorialesTitle tutorialesTitle"
+        "tutorial1 tutorial2"
+        "tutorial3 tutorial4";
+    }
+
+    .articulo{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 170px 1fr;
+
+        grid-template-areas:
+        "artTitle artTitle"
+        "artParrafo artImg";
+    }
+
+    .cortinas{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .categorias{
+        display: grid;
+        gap: 2rem;
+        padding: 2rem;
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
