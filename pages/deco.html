@@ -4,45 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deco</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="shortcut icon" href="../img/LogoSolo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-    <header class="header">
-        <a href="../index.html" class="logo"><img src="../img/AgrainNegroSinFondo.png" alt="logo" ></a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <!-- Logo -->
+          <a class="navbar-brand fs-4" href="../index.html"><img src="../img/AgrainNegroSinFondo.png" alt="" width="190px"></a>
+          <!-- Boton -->
+          <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Barra Lateral -->
+          <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <!-- Barra Lateral Header -->
+            <div class="offcanvas-header border-bottom">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./img/AgrainSinFondo.png" alt="" width="150px"></h5>
+              <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <!-- Barra Lateral Body -->
+            <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+              <ul class="navbar-nav justify-content-center align-items-center fs-6 flex-grow-1 pe-3">
 
-        <nav>
-            <ul class="menu">
-                <li><a href="../pages/pintureria.html">PINTURERIA</a></li>
-                <li><a href="#">DECO</a></li>
-                <li><a href="../pages/nosotros.html">NOSOTROS</a></li>
-                <li><a href="../pages/contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
-
-        <div class="search">
-            <input type="search" placeholder="Que estas buscando?">
+                <li class="nav-item mx-2">
+                  <a class="nav-link active" aria-current="page" href="../index.html"></i></a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="../pages/pintureria.html">Pintureria</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link" href="#">Cortinas</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                </li>
+              </ul>
+              <!-- Search -->
+              <form class="d-flex flex-lg-row justify-content-center align-items-center gap-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Que estas buscando?" aria-label="Search">
+                <button class="btn btn-success bg-dark" style="border: 1px solid #505050;" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
         </div>
-</header>
+      </nav>
     
     <main>
-        <article>
-            <h1>Titulo</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius corporis omnis incidunt dolores! Ad animi asperiores aliquid? Quos debitis, quaerat eligendi optio beatae nobis qui, quidem a dicta, dolore laborum?</p>
+        <h2 class="cortinas-title">Cortinas Especiales</h2>
+        <article class="cortinas">
+            <div class="sistema sist-roller" >
+                <img src="../img/roller.jpg" alt="" class="sist-img">
+                <h2 class="sist-title">Manhattan</h2>
+            </div>
+            <div class="sistema sist-atenas" >
+                <img src="../img/atenas.jpg"alt="" class="sist-img">
+                <h2 class="sist-title">Atenas</h2>
+            </div>
+            <div class="sistema sist-newyork" >
+                <img src="../img/newyork.jpg" alt="" class="sist-img">
+                <h2 class="sist-title">New York</h2>
+            </div>
+            <div class="sistema sist-vertical" >
+                <img src="../img/vertical.jpg" alt="" class="sist-img">
+                <h2 class="sist-title">Barcelona</h2>
+            </div>
+            <div class="sistema sist-dubai" >
+                <img src="../img/dubai.jpg" alt="" class="sist-img">
+                <h2 class="sist-title">Dubai</h2>
+            </div>
+            <div class="sistema sist-vienna" >
+                <img src="../img/vienna.jpg" alt="" class="sist-img">
+                <h2 class="sist-title">Vienna</h2>
+            </div>
+            <div class="sistema sist-venecia" >
+                <img src="../img/venecia.jpg" alt="" class="sist-img">
+                <h2 class="sist-title">Venecia</h2>
+            </div>
+            <div class="sistema sist-romana" >
+                <img src="../img/romana.jpg" alt="" class="sist-img">
+                <h2 class="sist-title">Milan</h2>
+            </div>
+            <div class="sistema sist-paneles" >
+                <img src="../img/paneles.jpg" alt="" class="sist-img">
+                <h2 class="sist-title">Tokyo</h2>
+            </div>
         </article>
-        <article>
-            <h1>Titulo</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti excepturi expedita, amet repellat possimus iste exercitationem harum cum temporibus ut aut in, consequuntur eum magni accusamus voluptates asperiores quis quo.</p>
-        </article>
-        <article>
-            <h1>Titulo</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam in excepturi velit repellendus itaque sunt mollitia, delectus sequi, nulla, veniam vitae veritatis est culpa? Incidunt veniam id magnam. Dolore quis sapiente dignissimos molestias, distinctio iusto deleniti cumque commodi? Velit, maiores?</p>
-        </article>
-        <img src="../img/pintureria2.jpg" alt="Imagen de Prueba" width="500px">
-        <article>
-            <h1>Titulo</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, saepe! Sequi a ut obcaecati, totam sit quo, repellendus cum assumenda perspiciatis vel tenetur molestias tempora neque nam sapiente earum eaque ratione qui quam adipisci! Iste dolore repellendus cumque perferendis sit nostrum saepe fugiat amet est. Harum accusantium consequatur reprehenderit, tempora obcaecati eligendi rerum nesciunt incidunt totam saepe quas, velit impedit. Eveniet fuga, esse magnam enim vero blanditiis! Repellat ipsa dolores tempore nemo quae doloremque voluptatibus aspernatur, illo iste qui eius modi similique minima possimus, tempora veritatis? Animi distinctio natus odit.</p>
-        </article>
+
+        <a class="presupuesto" href="#">Solicitá tu Presupuesto!</a>
+
     </main>
 
     <footer>

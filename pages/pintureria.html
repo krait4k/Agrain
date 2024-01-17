@@ -1,48 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pintureria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="shortcut icon" href="../img/LogoSolo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../css/main.css">
 </head>
+
 <body>
-    <header class="header">
-            <a href="../index.html" class="logo"><img src="../img/AgrainNegroSinFondo.png" alt="logo" ></a>
-
-            <nav>
-                <ul class="menu">
-                    <li><a href="#">PINTURERIA</a></li>
-                    <li><a href="../pages/deco.html">DECO</a></li>
-                    <li><a href="../pages/nosotros.html">NOSOTROS</a></li>
-                    <li><a href="../pages/contacto.html">CONTACTO</a></li>
-                </ul>
-            </nav>
-
-            <div class="search">
-                <input type="search" placeholder="Que estas buscando?">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <!-- Logo -->
+          <a class="navbar-brand fs-4" href="../index.html"><img src="../img/AgrainNegroSinFondo.png" alt="" width="190px"></a>
+          <!-- Boton -->
+          <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Barra Lateral -->
+          <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <!-- Barra Lateral Header -->
+            <div class="offcanvas-header border-bottom">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="../img/AgrainSinFondo.png" alt="" width="150px"></h5>
+              <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-    </header>
+            <!-- Barra Lateral Body -->
+            <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+              <ul class="navbar-nav justify-content-center align-items-center fs-6 flex-grow-1 pe-3">
+
+                <li class="nav-item mx-2">
+                  <a class="nav-link active" aria-current="page" href="../index.html"></i></a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="#">Pintureria</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link" href="../pages/deco.html">Cortinas</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                </li>
+              </ul>
+              <!-- Search -->
+              <form class="d-flex flex-lg-row justify-content-center align-items-center gap-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Que estas buscando?" aria-label="Search">
+                <button class="btn btn-success bg-dark" style="border: 1px solid #505050;" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
 
     <main>
-        <article>
-            <h1>Titulo</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius corporis omnis incidunt dolores! Ad animi asperiores aliquid? Quos debitis, quaerat eligendi optio beatae nobis qui, quidem a dicta, dolore laborum?</p>
+        <!-- Seccion Productos -->
+        <article class="productos">
+            <h2 class="productos-title">Nuestros Productos</h2>
+            <div class="categorias">
+                <div class="categoria cat1">
+                    <div class="linea">
+                        <p class="linea-icon"><i class="bi bi-palette2"></i></p>
+                        <h3 class="linea-title">Mamposteria</h3>
+                        <p class="linea-text">Colores duraderos y protección excepcional. Transforma tus paredes con nuestra gama de alta calidad y estilo inigualable.</p>
+                        <a class="linea-link" href="">Ver más</a>
+                    </div>
+                </div>
+
+                <div class="categoria cat2">
+                    <div class="linea">
+                        <p class="linea-icon"><i class="bi bi-paint-bucket"></i></p>
+                        <h3 class="linea-title">Sinteticos</h3>
+                        <p class="linea-text">Innovadoras y sofisticadas. Protege tus superficies con colores vibrantes y resistencia excepcional. Estilo y rendimiento incomparables.</p>
+                        <a class="linea-link" href="">Ver más</a>
+                    </div>
+                </div>
+
+                <div class="categoria cat3">
+                    <div class="linea">
+                        <p class="linea-icon"><i class="bi bi-shop-window"></i></p>
+                        <h3 class="linea-title">Maderas</h3>
+                        <p class="linea-text">Barnices y Lacas para Madera. Protección duradera, acabados impecables. Resalta y preserva la elegancia de tus muebles, carpinterias y superficies.</p>
+                        <a class="linea-link" href="">Ver más</a>
+                    </div>
+                </div>
+
+                <div class="categoria cat4">
+                    <div class="linea">
+                        <p class="linea-icon"><i class="bi bi-droplet-half"></i></p>
+                        <h3 class="linea-title">Especiales</h3>
+                        <p class="linea-text">Pinturas Especiales para Pisos, Industria, Piscinas y mas. Durabilidad, resistencia y estilo en cada aplicación. Transforma con confianza.</p>
+                        <a class="linea-link" href="">Ver más</a>
+                    </div>
+                </div>
+            </div>
         </article>
-        <article>
-            <h1>Titulo</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti excepturi expedita, amet repellat possimus iste exercitationem harum cum temporibus ut aut in, consequuntur eum magni accusamus voluptates asperiores quis quo.</p>
+        <!-- Seccion Simulador de Colores -->
+        <article class="simulador">
+            <h2 class="sim-title">Simulador de Colores</h2>
+
+            <div class="colores">
+                
+                <div class="sim-int">
+                    <h3 class="interior">Interior</h3>
+                    <img class="img-int" src="../img/Imagen_de_inicio_interior-removebg-preview.png" alt="">
+                    <p class="tendencia">Colores en Tendencia</p>
+                    
+                    <div class="carta">
+                        <img class="carta-img" src="../img/Duna.png" alt="Duna">
+                        <img class="carta-img" src="../img/Amarillo.png" alt="Amarillo">
+                        <img class="carta-img" src="../img/Azul.png" alt="Azul">
+                        <img class="carta-img" src="../img/Naranja.png" alt="Naranja">
+                        <img class="carta-img" src="../img/Rojo.png" alt="Rojo">
+                        <img class="carta-img" src="../img/Marron.png" alt="Marron">
+                        <img class="carta-img" src="../img/Verde.png" alt="Verde">
+                        <img class="carta-img" src="../img/Violeta.png" alt="Violeta">
+
+                    </div>
+
+                </div>
+
+                <div class="sim-ext">
+                    <h3 class="exterior">Exterior</h3>
+                    <img class="img-ext" src="../img/imagen_de_inicio_exterior-removebg-preview.png" alt="">
+                    <p class="tendencia">Colores en Tendencia</p>
+                    
+                    <div class="carta">
+                        <img class="carta-img" src="../img/Arena.png" alt="Arena">
+                        <img class="carta-img" src="../img/Beige.png" alt="Beige">
+                        <img class="carta-img" src="../img/Gris.png" alt="Gris">
+                        <img class="carta-img" src="../img/Cemento.png" alt="Cemento">
+                        <img class="carta-img" src="../img/Negro.png" alt="Negro">
+                        <img class="carta-img" src="../img/Ocre.png" alt="Ocre">
+                        <img class="carta-img" src="../img/Teja.png" alt="Teja">
+                    </div>
+
+                </div>
+
+            </div>
+
         </article>
-        <article>
-            <h1>Titulo</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam in excepturi velit repellendus itaque sunt mollitia, delectus sequi, nulla, veniam vitae veritatis est culpa? Incidunt veniam id magnam. Dolore quis sapiente dignissimos molestias, distinctio iusto deleniti cumque commodi? Velit, maiores?</p>
-        </article>
-        <article>
-            <h1>Titulo</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, saepe! Sequi a ut obcaecati, totam sit quo, repellendus cum assumenda perspiciatis vel tenetur molestias tempora neque nam sapiente earum eaque ratione qui quam adipisci! Iste dolore repellendus cumque perferendis sit nostrum saepe fugiat amet est. Harum accusantium consequatur reprehenderit, tempora obcaecati eligendi rerum nesciunt incidunt totam saepe quas, velit impedit. Eveniet fuga, esse magnam enim vero blanditiis! Repellat ipsa dolores tempore nemo quae doloremque voluptatibus aspernatur, illo iste qui eius modi similique minima possimus, tempora veritatis? Animi distinctio natus odit.</p>
-        </article>
-        <img src="../img/pintureria2.jpg" alt="Imagen de Prueba" width="500px">
+
+        <!-- Seccion Calculadora de Consumo -->
+        <article class="calculadora"></article>
+        
     </main>
 
     <footer>
@@ -67,4 +172,5 @@
         </div>
     </footer>
 </body>
+
 </html>
