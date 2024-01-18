@@ -28,7 +28,7 @@
         }
 
     }
-    
+
     .mision-vision{
         display: block;
 
@@ -37,7 +37,7 @@
         }
 
     }
-    
+
     .historia{
         display: block;
 
@@ -52,5 +52,13 @@
         padding: 2rem;
 
         grid-template-columns: 1fr;
+    }
+    .carta{
+        display: flex;
+        overflow-x: auto;
+    }
+
+    .maps{
+        display: block;
     }
 }

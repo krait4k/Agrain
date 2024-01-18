@@ -229,7 +229,8 @@ img {
   font-weight: 500;
   margin-bottom: 2rem;
 }
-.locales .maps {
+
+.maps {
   display: flex;
   justify-content: center;
   gap: 4rem;
@@ -246,58 +247,59 @@ img {
   font-weight: 500;
   margin-bottom: 1rem;
 }
-.productos .categorias {
+
+.categorias {
   display: flex;
   gap: 2rem;
   padding: 2rem;
 }
-.productos .categorias .cat1 {
+.categorias .cat1 {
   background-color: rgb(90, 180, 171);
 }
-.productos .categorias .cat1:hover {
+.categorias .cat1:hover {
   background-image: url(../img/latexFondo.png);
   background-size: 100%;
 }
-.productos .categorias .cat2 {
+.categorias .cat2 {
   background-color: rgb(146, 146, 146);
 }
-.productos .categorias .cat2:hover {
+.categorias .cat2:hover {
   background-image: url(../img/esmalteFondo.png);
   background-size: 100%;
 }
-.productos .categorias .cat3 {
+.categorias .cat3 {
   background-color: rgb(230, 139, 230);
 }
-.productos .categorias .cat3:hover {
+.categorias .cat3:hover {
   background-image: url(../img/maderasFondo.png);
   background-size: 100%;
 }
-.productos .categorias .cat4 {
+.categorias .cat4 {
   background-color: rgb(235, 235, 110);
 }
-.productos .categorias .cat4:hover {
+.categorias .cat4:hover {
   background-image: url(../img/especialFondo.png);
   background-size: 100%;
 }
-.productos .categorias .categoria {
+.categorias .categoria {
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
-.productos .categorias .categoria .linea-icon {
+.categorias .categoria .linea-icon {
   font-size: 3rem;
   margin-bottom: 2rem;
   text-align: center;
 }
-.productos .categorias .categoria .linea-title {
+.categorias .categoria .linea-title {
   font-size: 20px;
   font-weight: 450;
   margin-bottom: 1rem;
 }
-.productos .categorias .categoria .linea-text {
+.categorias .categoria .linea-text {
   margin-bottom: 0.8rem;
 }
-.productos .categorias .categoria .linea-link {
+.categorias .categoria .linea-link {
   color: white;
   font-size: 0.8rem;
   padding: 0.4rem;
@@ -524,5 +526,12 @@ footer .redes img {
     gap: 2rem;
     padding: 2rem;
     grid-template-columns: 1fr;
+  }
+  .carta {
+    display: flex;
+    overflow-x: auto;
+  }
+  .maps {
+    display: block;
   }
 }/*# sourceMappingURL=estilos.css.map */
