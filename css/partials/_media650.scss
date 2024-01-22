@@ -5,6 +5,15 @@
         width: 0px;
     }
 
+    .articulo {
+        display: block;
+        text-align: center;
+        padding: 2rem;
+    }
+    .articulo p{
+        text-align: start;
+    }
+
     .tutoriales{
         height: 70%;
         justify-items: center;
@@ -60,5 +69,6 @@
 
     .maps{
         display: block;
+        overflow: hidden;
     }
 }
