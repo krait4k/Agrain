@@ -2,34 +2,66 @@ footer{
     border-top: solid 1px;
     padding: 20px;
     display: flex;
-    background-color: rgb(248, 248, 248);
-    align-items: center;
+    background-color: 	#212529;
+    color: white;
+    align-items: start;
     justify-content: space-between;
+    gap: 1rem;
+
+    .line{
+        border-right: solid 1px white;
+        
+    }
 
     .ubicacion{
-        display: block;
 
-        .ubicacion h3{
-            font-size: small;
-            margin-bottom: 10px;
+        .pm{
+            display: flex;
+            gap: 1rem;
         }
-        .ubicacion img{
-            position: absolute;
-            padding-top: 10px;
+        .sms{
+            display: flex;
+            gap: 1rem;
         }
-        .ubicacion p{
-            margin-left: 35px;
-            padding: 10px;
+        .cel1{
+            display: flex;
+            gap: 1rem;
+        }
+        .cel2{
+            display: flex;
+            gap: 1rem;
         }
 
+        .ubiTitle{
+            padding-bottom: .5rem;
+            font-size: 24px;
+            font-weight: 400; 
+        } 
     }
 
-    .redes img{
-        width: 40px;
-        height: 40px;
+    .horarios{
+    
+        .horTitle{
+            padding-bottom: .5rem;
+            font-size: 24px;
+            font-weight: 400;
+        }
+    }
 
-        margin: 1rem;
-        object-fit: cover;
+    .redes{
+
+        .redTitle{
+            padding-bottom: .5rem;
+            font-size: 24px;
+            font-weight: 400;
+        }
+
+        img{
+            width: 40px;
+            height: 40px;
+
+            margin: 1rem;
+            object-fit: cover;
+        }
     }
 }
-

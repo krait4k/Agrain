@@ -71,4 +71,21 @@
         display: block;
         overflow: hidden;
     }
+
+    footer{
+        display: block;
+
+        .line{
+            display: none;
+        }
+
+        .ubicacion{
+            border-bottom: solid 1px white;
+            margin-bottom: 1rem;
+        }
+        .horarios{
+            border-bottom: solid 1px white;
+            margin-bottom: 1rem;
+        }
+    }
 }
