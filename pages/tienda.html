@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrain - Tienda</title>
+    <meta name="description" content="Toda la variedad y los mejores precios para preservar tus superficies con las mejores marcas.">
+    <meta name="keywords" content="Pintureria, Decoracion, Interiores, Pinturas, Construccion, Latex, Esmalte, Cortinas, Rollers, Verticales, Hogar, Obra, Presupuestos">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../img/LogoSolo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container-fluid">
+                <!-- Logo -->
+              <a class="navbar-brand fs-4" href="#"><img src="../img/AgrainNegroSinFondo.png" alt="LogoDark" width="190px"></a>
+              <!-- Boton -->
+              <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- Barra Lateral -->
+              <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <!-- Barra Lateral Header -->
+                <div class="offcanvas-header border-bottom">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="../img/AgrainSinFondo.png" alt="logoComun" width="150px"></h5>
+                  <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <!-- Barra Lateral Body -->
+                <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+                  <ul class="navbar-nav justify-content-center align-items-center fs-6 flex-grow-1 pe-3">
+    
+                    <li class="nav-item mx-2">
+                      <a class="nav-link active" aria-current="page" href="#"></i></a>
+                    </li>
+                    <li class="nav-item mx-2">
+                      <a class="nav-link" href="../pages/pintureria.html">Pintureria</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="../pages/deco.html">Cortinas</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+                  <!-- Search -->
+                  <form class="d-flex flex-lg-row justify-content-center align-items-center gap-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Que estas buscando?" aria-label="Search">
+                    <button class="btn btn-success bg-dark" style="border: 1px solid #505050;" type="submit">Buscar</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main class="main">
+        <section class="container">
+            <h2 class="titulo">Tienda</h2>
+            <div class="productos" id="productos">
+                <!-- main.js -->
+            </div>
+        </section>
+        <section class="container">
+            <h2 class="titulo">Carrito</h2>
+            <div class="carrito">
+                <div id="carrito-vacio">
+                    <h4>Carrito Vacío.</h4>
+                </div>
+                <div class="carrito-productos d-none" id="carrito-productos">
+                    <!-- main.js -->
+                </div>
+                <div class="carrito-total">
+                    <h2 class="total-titulo">Total: <span id="carrito-total">$0</span></h2>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="ubicacion">
+            <h3 class="ubiTitle">Donde Encontrarnos</h3>
+
+            <div class="pm">
+              <i class="bi bi-geo-alt-fill"></i>
+              <p>Perito Moreno 1098, Godoy Cruz, Mendoza</p>
+            </div>
+            
+            <div class="sms">
+              <i class="bi bi-geo-alt-fill"></i>
+              <p>Av. San Martin Sur 1166, Godoy Cruz, Mendoza</p>
+            </div>
+
+            <div class="cel1">
+              <i class="bi bi-telephone-fill"></i>
+              <p>261 640-9292</p>
+            </div>
+
+            <div class="cel2">
+              <i class="bi bi-telephone-fill"></i>
+              <p>261 253-3387</p>
+            </div>
+        </div>
+
+        <div class="line"><br><br><br><br><br><br></div>
+
+        <div class="horarios">
+          <h3 class="horTitle">Horario de atención</h3>
+          <p>Lunes a Viernes:</p>
+          <p>9:00 - 13:30 y 16:00 - 19:00</p>
+          <p>Sabados:</p>
+          <p>9:00 - 13:00</p>
+        </div>
+
+        <div class="line"><br><br><br><br><br><br></div>
+
+        <div class="redes">
+          <h3 class="redTitle">Nuestras redes</h3>
+            <a href="https://www.instagram.com/agrainpintuydeco/" target="_blank">
+                <img src="../img/instagramLogo.png" alt="instagram" width="20px">
+            </a>
+            <a href="https://wa.me/542612533387" target="_blank">
+                <img src="../img/whatsapp-logo-1.png" alt="whatsapp" width="20px">
+            </a>
+        </div>
+    </footer>
+    
+    <script src="../js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
