@@ -139,6 +139,14 @@ function agregarAlCarrito(e) {
     }
     actualizarNumerito();
 
+    Toastify({
+        text: "Producto Agregado",
+        gravity: "bottom",
+        style: {
+          background: "linear-gradient(to right, rgb(90, 180, 171), #212529)",
+        }
+      }).showToast();
+
     localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
 }
 
