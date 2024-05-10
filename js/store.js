@@ -1,65 +1,11 @@
-const productos = [
-    {
-        id: "pintura-01",
-        titulo: "Pintura Latex",
-        imagen: "../img/latas.jpg",
-        categoria: {
-            nombre: "Pinturas",
-            id: "pinturas"
-        },
-        precio: 50000
-    },
-    {
-        id: "pintura-02",
-        titulo: "Pintura Esmalte",
-        imagen: "../img/latas.jpg",
-        categoria: {
-            nombre: "Pinturas",
-            id: "pinturas"
-        },
-        precio: 20000
-    },
-    {
-        id: "pintura-03",
-        titulo: "Pintura Barniz",
-        imagen: "../img/latas.jpg",
-        categoria: {
-            nombre: "Pinturas",
-            id: "pinturas"
-        },
-        precio: 10000
-    },
-    {
-        id: "acc-01",
-        titulo: "Rodillo",
-        imagen: "../img/pintureria2.jpg",
-        categoria: {
-            nombre: "Accesorios",
-            id: "accesorios"
-        },
-        precio: 8000
-    },
-    {
-        id: "acc-02",
-        titulo: "Pincel",
-        imagen: "../img/pintureria2.jpg",
-        categoria: {
-            nombre: "Accesorios",
-            id: "accesorios"
-        },
-        precio: 3000
-    },
-    {
-        id: "acc-02",
-        titulo: "Aguarras",
-        imagen: "../img/pintureria2.jpg",
-        categoria: {
-            nombre: "Varios",
-            id: "varios"
-        },
-        precio: 3000
-    },
-];
+let productos = [];
+
+fetch("../data/productos.json")
+    .then(res => res.json())
+    .then(data => {
+        productos = data;
+        cargarProductos(productos);
+    })
 
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const botonesCategorias = document.querySelectorAll(".boton-categoria");
@@ -87,7 +33,7 @@ function cargarProductos(productosElegidos){
     actualizarBotonesAgregar();
 }
 
-cargarProductos(productos);
+// cargarProductos(productos);
 
 botonesCategorias.forEach(boton => {
     boton.addEventListener("click", (e) => {
